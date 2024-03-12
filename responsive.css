@@ -1,0 +1,341 @@
+@media(max-width:1100px) {
+    .left {
+        position: absolute;
+        z-index: 1;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        transition: all ease-in-out 1s;
+    }
+
+    .m1 {
+        margin: 8px 1px !important;
+    }
+
+    .crosshm {
+        display: block;
+    }
+
+    .right {
+        width: 100%;
+        height: 100vh;
+        transition: all ease-in-out 1s;
+        margin: 0px;
+    }
+
+    .hambg img {
+        display: block;
+    }
+
+    .nav {
+        gap: 23px;
+    }
+
+    .title {
+        font-size: 25px;
+        padding-left: 6px;
+        margin-bottom: 0px;
+    }
+
+    .discription {
+        padding-left: 5px;
+        color: #a7a7a7;
+        font-size: 16px;
+    }
+
+    .playbar {
+        margin-left: 8px;
+    }
+
+}
+
+@media (max-width:825px) {
+    .user {
+        width: 30px;
+        height: 30px;
+    }
+
+    .user-name {
+        font-size: 13px;
+    }
+
+    .user-email {
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .logIn-btn {
+        width: 65px;
+        height: 35px;
+        border: none;
+        outline: none;
+        background: white;
+        color: #000000;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px;
+        margin-right: 17px;
+        margin: 2px;
+        border-radius: 17px;
+        cursor: pointer;
+        transition: all 99ms ease-in;
+    }
+
+    .button {
+        gap: 9px;
+    }
+
+    .hambg img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .m1 {
+        margin: 8px 1px;
+    }
+
+    .song-info,
+    .volume,
+    .song-time {
+        position: static;
+
+    }
+
+    .playbar {
+        height: 182px;
+        width: 96%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .seekbar {
+        bottom: 12px;
+        height: 4px;
+    }
+
+    .card {
+        width: 391px;
+        padding: 10px;
+        margin: 35px;
+    }
+
+    .button {
+        margin-top: 9px;
+    }
+
+    .header {
+        height: 75px;
+    }
+
+    .volume {
+        gap: 120px;
+    }
+
+    .range {
+        position: static;
+    }
+
+    .song-btn img {
+        width: 70px;
+    }
+
+    .back {
+        display: none;
+    }
+
+    .nav {
+        padding: 20px;
+    }
+
+    .cardContainer {
+        max-height: 62%;
+    }
+
+
+    .logForm {
+        width: 320px;
+        top: 12%;
+        left: 10%;
+    }
+
+    .container-login {
+        width: 100%;
+        height: 850px;
+    }
+
+    .log-h1 {
+        text-align: start;
+        font-size: 43px;
+        line-height: 57px;
+        margin-bottom: 51px;
+    }
+
+    .form-logo {
+        height: 115px;
+        width: 155px;
+        margin-left: 80px;
+    }
+
+    .playbar {
+        margin-left: 8px;
+    }
+
+    .spotifyPlaylist {
+        padding: 0px;
+    }
+
+    .play {
+        right: 23px;
+        width: 60px;
+        height: 60px;
+    }
+
+    :root {
+        --o: 0;
+        --p: 400px;
+    }
+
+    .card:hover {
+        --o: 1;
+        --p: 310px;
+    }
+
+  
+
+   
+
+    .logo-img {
+        width: 100px;
+    }
+}
+
+
+
+
+
+@media (max-width:395px) {
+
+    :root {
+        --o: 0;
+        --p: 330px;
+    }
+
+    .card:hover {
+        --o: 1;
+        --p: 234px;
+    }
+
+    .playbar {
+        margin-left: 8px;
+    }
+
+    .play {
+        width: 60px;
+        height: 60px;
+    }
+
+    .m1 {
+        margin: 8px 1px;
+    }
+
+    :root {
+        --o: 0;
+        --p: 330px;
+    }
+
+    .card:hover {
+        background-color: #323131;
+        --o: 1;
+        --p: 236px;
+    }
+
+    .volume {
+        gap: 120px;
+    }
+
+
+    .spotifyPlaylist {
+        padding: 0px;
+    }
+
+
+    .form-logo {
+        height: 115px;
+        width: 155px;
+        margin-left: 60px;
+    }
+
+    .song-time {
+        font-size: 12px;
+    }
+
+    #volume {
+        width: 78px;
+        height: 3px;
+        bottom: 1px;
+    }
+
+    .volume img {
+        width: 20px;
+    }
+
+    .range {
+        gap: 2px;
+    }
+
+    .volume {
+        margin-top: 12px;
+    }
+
+    .logForm {
+        width: 280px;
+        top: 12%;
+        left: 5%;
+    }
+
+}
+
+@media(max-width:360px) {
+    .logForm {
+        width: 320px;
+        top: 12%;
+        left: 6%;
+    }
+
+    .playbar {
+        margin-left: 8px;
+    }
+
+    .spotifyPlaylist {
+        padding: 0px;
+    }
+
+    .m1 {
+        margin: 8px 1px;
+    }
+
+    .card:hover {
+        --o: 1;
+        --p: 195px;
+    }
+}
+
+@media(max-width:320px) {
+    :root {
+        --o: 0;
+        --p: 250px;
+    }
+
+    .play {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .card:hover {
+        --o: 1;
+        --p: 175px;
+    }
+
+  
+}
