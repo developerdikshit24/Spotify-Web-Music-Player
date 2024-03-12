@@ -16,7 +16,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`http://127.0.0.1:5501/spotify_clone/${folder}`)
+    let a = await fetch(`/spotify_clone/${folder}`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -73,7 +73,7 @@ let playmusic = (audio, pause = false) => {
 // let num = Math.random() * 4;
 // let rand = Math.round(num);
 async function getFolder() {
-    let folderUrl = await fetch(`http://127.0.0.1:5501/spotify_clone/songs`)
+    let folderUrl = await fetch(`/spotify_clone/songs`)
     let response = await folderUrl.text()
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -82,9 +82,9 @@ async function getFolder() {
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
         let cardContain = document.querySelector(".cardContainer");
-        if (e.href.includes("/songs/")) {
+        if (e.href.includes("/songs/") && !e.href.includes(".htaccess")) {
             let folder = e.href.split("/songs/")[1];
-            let folderUrl = await fetch(`http://127.0.0.1:5501/spotify_clone/songs/${folder}/info.json`)
+            let folderUrl = await fetch(`/spotify_clone/songs/${folder}/info.json`)
             response = await folderUrl.json()
             cardContain.innerHTML = cardContain.innerHTML + `<div data-folder="${folder}" class="card">
                     <img src="/spotify_clone/songs/${folder}/cover.jpg" alt=""> 
@@ -211,7 +211,7 @@ async function main() {
         document.querySelector(".circle").style.left = (currentSong.currentTime / currentSong.duration) * 100 + "%";
     }
     )
-    
+
     //  Seekbar moving and seeking the songs 
     document.querySelector(".seekbar").addEventListener("click", (element) => {
         let persent = element.offsetX / element.target.getBoundingClientRect().width * 100;
